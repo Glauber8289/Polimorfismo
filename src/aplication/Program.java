@@ -42,6 +42,7 @@ public class Program {
 				System.out.println("Taxa de importação");
 				double taxaAlfandegaria = sc.nextDouble();
 				list.add(new ProdutoImportado(name,price,taxaAlfandegaria));
+				
 			}
 			System.out.println();
 			System.out.println("ETIQUETAS DE PRECO:");

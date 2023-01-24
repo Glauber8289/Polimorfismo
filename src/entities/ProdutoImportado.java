@@ -16,13 +16,15 @@ public class ProdutoImportado extends Product{
 		this.taxaAlfandegaria = taxaAlfandegaria;
 	}
 
+	
+	
+    
+	public String precoTotal() {
+		return getPrice()+"A taxa Alfandegaria é "+taxaAlfandegaria;
+		
+	}
 	@Override
 	public String priceTag() {
-		return super.priceTag();
-	}
-    
-	public Double precoTotal() {
-		return getPrice()+taxaAlfandegaria;
-		
+		return super.priceTag()+precoTotal();
 	}
 }

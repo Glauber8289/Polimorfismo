@@ -30,7 +30,7 @@ public void setPrice(double price) {
 	this.price = price;
 }
    public String priceTag() {
-	   return name+"\n"+price;
+	   return "Nome do produto: " + name +"\n"+ "Preço"+price;
 	   
    }
    

@@ -23,7 +23,7 @@ public class UsodoProduto extends Product {
 	
 	@Override
 	  public String priceTag() {
-		   return name+"\n"+price;
+		   return name+"\n"+price+getDatadeFabricacao() ;
 		   
 	   }
 }
