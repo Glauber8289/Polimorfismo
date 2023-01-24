@@ -22,7 +22,7 @@ public class Program {
 			System.out.println("Insira os dados do Produto #" + i);
 		      System.out.println();
 		      System.out.println("Digite se o produto e c/u/i ");
-			   String tipo=sc.next();
+			   char tipo=sc.next().charAt(0);
 		      System.out.println("Nome do Produto");
 		      String name = sc.next();
 		      System.out.println("Preço do produto");
@@ -30,10 +30,10 @@ public class Program {
 		      
 			
 		      
-			if(tipo=="c") {
+			if(tipo=='c') {
 				list.add(new Product(name,price));
 				}
-			else if(tipo=="u") {
+			else if(tipo=='u') {
 				System.out.println("Data de fabricação DD/MM/YYYY");
 				LocalDate date = LocalDate.parse(sc.next(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 				list.add(new UsodoProduto(name,price,date));
