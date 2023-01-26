@@ -19,12 +19,12 @@ public class ProdutoImportado extends Product{
 	
 	
     
-	public String precoTotal() {
-		return getPrice()+"A taxa Alfandegaria é "+taxaAlfandegaria;
+	public double precoTotal() {
+		return getPrice()+taxaAlfandegaria;
 		
 	}
 	@Override
 	public String priceTag() {
-		return super.priceTag()+precoTotal();
+		return super.priceTag()+" O Valor da taxa Alfandegaria é "+ taxaAlfandegaria+"R$" + "\n O valor do produto somado com a taxa alfandegaria é "+precoTotal()+"R$";
 	}
 }
