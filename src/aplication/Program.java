@@ -19,9 +19,9 @@ public class Program {
 		int n = sc.nextInt();
 		
 		for(int i = 1;i<=n;i++) {
-			System.out.println("Insira os dados do Produto #" + i);
+			System.out.println("\n"+"Insira os dados do Produto #" + i);
 		      System.out.println();
-		      System.out.println("Digite se o produto e c/u/i ");
+		      System.out.println("Digite se o produto e comun,usado ou importado com as seguintes opções - c/u/i ");
 			   char tipo=sc.next().charAt(0);
 		      System.out.println("Nome do Produto");
 		      String name = sc.next();
