@@ -47,7 +47,7 @@ public class Program {
 			System.out.println();
 			System.out.println("ETIQUETAS DE PRECO:");
 			for (Product prod : list) {
-				System.out.println(prod.priceTag());
+				System.out.print(prod.priceTag());
 		
 		
 		}
