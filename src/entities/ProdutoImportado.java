@@ -25,6 +25,6 @@ public class ProdutoImportado extends Product{
 	}
 	@Override
 	public String priceTag() {
-		return "O nome do produto importado e "+name+"\n"+"O Valor da taxa Alfandegaria é "+ taxaAlfandegaria+"R$"+"\n"+ "O valor do produto somado com a taxa alfandegaria é "+precoTotal()+"R$";
+		return "\n"+"O nome do produto importado e "+name+"\n"+"O Valor da taxa Alfandegaria é "+ taxaAlfandegaria+"R$"+"\n"+ "O valor do produto somado com a taxa alfandegaria é "+precoTotal()+"R$";
 	}
 }
