@@ -1,5 +1,5 @@
 package entities;
-
+import aplication.Program;
 public class Product {
    protected String name;
    protected double price;
@@ -30,7 +30,9 @@ public void setPrice(double price) {
 	this.price = price;
 }
    public String priceTag() {
-	   return "Nome do produto comum: "+ name +"\n"+ "Preço: "+String.format("%.2f", price);
+		return name 
+				+ " $ " 
+				+ String.format("%.2f", price);
 	   
    }
    

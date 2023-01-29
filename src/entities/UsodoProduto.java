@@ -25,7 +25,7 @@ public class UsodoProduto extends Product {
 	
 	@Override
 	  public String priceTag() {
-		   return "\n"+"O nome do produto usado e "+ name+"\n" +"Seu preço é: "+price+"R$"+"\n"+"E sua data  de fabricacao e : " + datadeFabricacao.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+		   return "Dados do produto"+"O nome do produto usado e "+ name+"\n" +"Seu preço é: "+price+"R$"+"\n"+"E sua data  de fabricacao e : " + datadeFabricacao.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 		   
 	   }
 }
