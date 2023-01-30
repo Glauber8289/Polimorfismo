@@ -1,9 +1,12 @@
 package entities;
-import aplication.Program;
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class Product {
    protected String name;
    protected double price;
-
+	
    public Product() {
 	   
    }
@@ -30,9 +33,8 @@ public void setPrice(double price) {
 	this.price = price;
 }
    public String priceTag() {
-		return name 
-				+ " $ " 
-				+ String.format("%.2f", price);
+	   
+	   return "nome do produto comum: "+ name +"\n"+ "Preço: "+String.format("%.2f", price);
 	   
    }
    

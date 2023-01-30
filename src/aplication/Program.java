@@ -48,10 +48,11 @@ public class Program {
 			System.out.println("ETIQUETAS DE PRECO:");
 			for (Product prod : list) {
 				
-				
-                System.out.println("Dados do produto: "+i+"\n"+prod.priceTag());
-		     
-		        }
+				System.out.println("Dados do produto #" + i);
+				System.out.println();
+				System.out.println(prod.priceTag());
+               
+			}
 		}
 		
 		
